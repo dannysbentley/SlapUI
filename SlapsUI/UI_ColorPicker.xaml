@@ -1,0 +1,16 @@
+﻿<Controls:MetroWindow x:Class="SlapsUI.UI_ColorPicker"
+                      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                      xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls" 
+                      xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+                      Height="310" 
+                      Width="310"
+                      Title="UI_ColorPicker"
+                      Background="Black"
+                      BorderBrush="WhiteSmoke" 
+                      ResizeMode="CanResizeWithGrip"
+                  WindowStartupLocation="CenterScreen">
+  <Grid>
+    
+  </Grid>
+</Controls:MetroWindow>

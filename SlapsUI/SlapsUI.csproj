@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{56479EF2-512D-45DF-AF09-0BB4B9375562}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SlapsUI</RootNamespace>
+    <AssemblyName>SlapsUI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MahApps.Metro">
+      <HintPath>..\packages\MahApps.Metro.1.3.0\lib\net45\MahApps.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.1.3.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MyApp.xaml.cs">
+      <DependentUpon>MyApp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SlapsProgram.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI_ColorPicker.xaml.cs">
+      <DependentUpon>UI_ColorPicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI_ComboBox\UI_ComboBox4.xaml.cs">
+      <DependentUpon>UI_ComboBox4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI_ComboBox\UI_ComboBox3.xaml.cs">
+      <DependentUpon>UI_ComboBox3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI_ComboBox\UI_ComboBox2.xaml.cs">
+      <DependentUpon>UI_ComboBox2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI_ComboBox\UI_ComboBox1.xaml.cs">
+      <DependentUpon>UI_ComboBox1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI_InputBox\UI_InputBox4.xaml.cs">
+      <DependentUpon>UI_InputBox4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI_InputBox\UI_InputBox3.xaml.cs">
+      <DependentUpon>UI_InputBox3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI_InputBox\UI_InputBox2.xaml.cs">
+      <DependentUpon>UI_InputBox2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI_InputBox\UI_InputBox1.xaml.cs">
+      <DependentUpon>UI_InputBox1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI_OpenFile\UI_OpenFile.xaml.cs">
+      <DependentUpon>UI_OpenFile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Slider\UI_Slider4.xaml.cs">
+      <DependentUpon>UI_Slider4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Slider\UI_Slider3.xaml.cs">
+      <DependentUpon>UI_Slider3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Slider\UI_Slider2.xaml.cs">
+      <DependentUpon>UI_Slider2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI_Slider\UI_Slider1.xaml.cs">
+      <DependentUpon>UI_Slider1.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MyApp.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI_ColorPicker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI_ComboBox\UI_ComboBox4.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI_ComboBox\UI_ComboBox3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI_ComboBox\UI_ComboBox2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI_ComboBox\UI_ComboBox1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI_InputBox\UI_InputBox4.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI_InputBox\UI_InputBox3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI_InputBox\UI_InputBox2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI_InputBox\UI_InputBox1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI_OpenFile\UI_OpenFile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI_Slider\UI_Slider4.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI_Slider\UI_Slider3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI_Slider\UI_Slider2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI_Slider\UI_Slider1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dynamo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
