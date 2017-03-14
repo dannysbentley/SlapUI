@@ -6,45 +6,85 @@
                       ResizeMode="CanResizeWithGrip"
                       WindowStartupLocation="CenterScreen">
   <Grid>
-    <Button x:Name="Ok_Button" Content="ok" 
-                Margin="0,0,106,10" Click="Ok_Button_Click"
-                Height="25" Width="88" HorizontalAlignment="Right" VerticalAlignment="Bottom"
-                Background="LightBlue" BorderBrush="DarkBlue" Foreground="Black"/>
+    <Button x:Name="Ok_Button" 
+                Content="ok" 
+                Margin="0,0,106,10" 
+                Click="Ok_Button_Click"
+                Height="25" Width="88" 
+                HorizontalAlignment="Right" VerticalAlignment="Bottom"
+                Background="LightBlue" 
+                BorderBrush="DarkBlue" 
+                Foreground="Black"/>
 
-    <Button x:Name="cancel_Button" Content="cancel" Margin="0,0,10,10"
+    <Button x:Name="cancel_Button" 
+                Content="cancel" 
+                Margin="0,0,10,10"
                 HorizontalAlignment="Right" VerticalAlignment="Bottom"
                 Height="25" Width="88"  
                 Click="cancel_Button_Click"
-            Background="LightBlue" BorderBrush="DarkBlue" Foreground="Black"/>
+                Background="LightBlue" 
+                BorderBrush="DarkBlue" 
+                Foreground="Black"/>
 
-    <Label x:Name="Input" HorizontalAlignment="Left"  Foreground="Black" 
-               Margin="10,10,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
-    <Label x:Name="Input_2" HorizontalAlignment="Left"  Foreground="Black" 
-    	Margin="10,86,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
-    <Label x:Name="Input_3" HorizontalAlignment="Left"  Foreground="Black" 
-    	Margin="172,10,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
-    <Label x:Name="Input_4" HorizontalAlignment="Left"  Foreground="Black" 
-    	Margin="172,86,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
+    <Label x:Name="Input" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" 
+                Foreground="Black" 
+                Margin="10,10,0,0"             
+                FontFamily="Arial"/>
 
-    <ComboBox x:Name="ComboBox" HorizontalAlignment="Left" Margin="10,47,0,0" VerticalAlignment="Top" Width="120" Text="Select"
-                  Background="White"
-                 BorderBrush="DarkBlue"
-                 Foreground="Black"/>  
+    <Label x:Name="Input_2" 
+                HorizontalAlignment="Left"  VerticalAlignment="Top" 
+                Foreground="Black" 
+    	          Margin="10,86,0,0"
+                FontFamily="Arial"/>
+
+    <Label x:Name="Input_3" 
+                HorizontalAlignment="Left" VerticalAlignment="Top"  
+                Foreground="Black" 
+    	          Margin="172,10,0,0" 
+                FontFamily="Arial"/>
+
+    <Label x:Name="Input_4" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" 
+                Foreground="Black" 
+    	          Margin="172,86,0,0"                 
+                FontFamily="Arial"/>
+
+    <ComboBox x:Name="ComboBox" 
+                HorizontalAlignment="Left" VerticalAlignment="Top"
+                Margin="10,47,0,0"                
+                Width="120" 
+                Text="Select"
+                Background="White"
+                BorderBrush="DarkBlue"
+                Foreground="Black"/>  
     
-    <ComboBox x:Name="ComboBox_2" HorizontalAlignment="Left" Margin="10,123,0,0" VerticalAlignment="Top" Width="120" Text="Select"
-    	Background="White"
-                 BorderBrush="DarkBlue"
-                 Foreground="Black"/>
+    <ComboBox x:Name="ComboBox_2" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" 
+                Margin="10,123,0,0" 
+                Width="120" 
+                Text="Select"
+    	          Background="White"
+                BorderBrush="DarkBlue"
+                Foreground="Black"/>
 
-    <ComboBox x:Name="ComboBox_3" HorizontalAlignment="Left" Margin="172,47,0,0" VerticalAlignment="Top" Width="120" Text="Select"
-    	Background="White"
-                 BorderBrush="DarkBlue"
-                 Foreground="Black"/>    
+    <ComboBox x:Name="ComboBox_3" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" 
+                Margin="172,47,0,0" 
+                Width="120" 
+                Text="Select"
+    	          Background="White"
+                BorderBrush="DarkBlue"
+                Foreground="Black"/>    
     
-    <ComboBox x:Name="ComboBox_4" HorizontalAlignment="Left" Margin="172,123,0,0" VerticalAlignment="Top" Width="120" Text="Select"
-    	Background="White"
-                 BorderBrush="DarkBlue"
-                 Foreground="Black"/>
+    <ComboBox x:Name="ComboBox_4" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" 
+                Margin="172,123,0,0" 
+                Width="120" 
+                Text="Select"
+    	          Background="White"
+                BorderBrush="DarkBlue"
+                Foreground="Black"/>
 
   </Grid>
 </Window>

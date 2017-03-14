@@ -5,28 +5,45 @@
                       ResizeMode="CanResizeWithGrip"
                       WindowStartupLocation="CenterScreen">
   <Grid>
-    <Button x:Name="Ok_Button" Content="ok" 
-                Margin="0,0,106,10" Click="Ok_Button_Click"
-                Height="25" Width="88" HorizontalAlignment="Right" VerticalAlignment="Bottom"
-                Background="LightBlue" BorderBrush="DarkBlue" Foreground="Black"/>
+    <Button x:Name="Ok_Button" 
+                Content="ok" 
+                Margin="0,0,106,10" 
+                Click="Ok_Button_Click"
+                Height="25" Width="88" 
+                HorizontalAlignment="Right" VerticalAlignment="Bottom"
+                Background="LightBlue" 
+                BorderBrush="DarkBlue" 
+                Foreground="Black"/>
 
-    <Button x:Name="cancel_Button" Content="cancel" Margin="0,0,10,10"
+    <Button x:Name="cancel_Button" 
+                Content="cancel" 
+                Margin="0,0,10,10"
+                Click="cancel_Button_Click"
                 HorizontalAlignment="Right" VerticalAlignment="Bottom"
                 Height="25" Width="88"  
-                Background="LightBlue" BorderBrush="DarkBlue" Foreground="Black" Click="cancel_Button_Click"/>
+                Background="LightBlue" 
+                BorderBrush="DarkBlue" 
+                Foreground="Black"/>
 
-    <Label x:Name="Input" HorizontalAlignment="Left"  Foreground="Black" 
-               Margin="10,10,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
+    <Label x:Name="Input" 
+                HorizontalAlignment="Left" VerticalAlignment="Top"  
+                Foreground="Black" 
+                Margin="10,10,0,0"
+                FontFamily="Arial"/>
 
-    <Slider x:Name="Slider" Margin="10,39,106,0" 
-                VerticalAlignment="Top" ValueChanged="Slider_ValueChanged"/>
+    <Slider x:Name="Slider" 
+                Margin="10,39,106,0" 
+                VerticalAlignment="Top" 
+                ValueChanged="Slider_ValueChanged"/>
 
     <TextBox Text="{Binding ElementName=Slider, Path=Value, UpdateSourceTrigger=PropertyChanged}" 
                  DockPanel.Dock="Right" TextAlignment="Right" 
                  Background="White"
                  BorderBrush="DarkBlue"
                  Foreground="Black"
-                 Height="30" Margin="0,25,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="78" />
+                 Height="30" Width="78" 
+                 Margin="0,25,10,0"
+                 HorizontalAlignment="Right" VerticalAlignment="Top"/>
   </Grid>
 </Window>
  
