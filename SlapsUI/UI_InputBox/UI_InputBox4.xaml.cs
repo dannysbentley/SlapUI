@@ -11,27 +11,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using MahApps.Metro.Controls;
 
 namespace SlapsUI
 {
     /// <summary>
     /// Interaction logic for UI_InputBox.xaml
     /// </summary>
-    public partial class UI_InputBox4 : MetroWindow
+    public partial class UI_InputBox4 : Window
     {
         public UI_InputBox4()
         {
-            EnsureApplicationResources();
             InitializeComponent();
-        }
-
-        public static void EnsureApplicationResources()
-        {
-            if (Application.Current == null)
-            {
-                new MyApp() { ShutdownMode = ShutdownMode.OnExplicitShutdown };
-            }
         }
 
         private void Ok_Button_Click(object sender, RoutedEventArgs e)

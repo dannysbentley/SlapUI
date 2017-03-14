@@ -19,19 +19,11 @@ namespace SlapsUI
     {
         public UI_OpenFile()
         {
-            EnsureApplicationResources();
             InitializeComponent();
         }
 
         public string _Filepath { get; set; }
  
-        public static void EnsureApplicationResources()
-        {
-            if (Application.Current == null)
-            {
-                new MyApp() { ShutdownMode = ShutdownMode.OnExplicitShutdown };
-            }
-        }
 
         private void Ok_Button_Click(object sender, RoutedEventArgs e)
         {

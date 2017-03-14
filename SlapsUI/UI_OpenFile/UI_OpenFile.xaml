@@ -2,8 +2,6 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Slaps UI Open File" Height="310" Width="310"
-        Background="Black"
-        BorderBrush="WhiteSmoke" 
         ResizeMode="CanResizeWithGrip"
 
         WindowStartupLocation="CenterScreen">
@@ -11,20 +9,21 @@
     <Grid>
         <Button x:Name="Ok_Button" Content="ok" 
                 Margin="0,0,106,10" Click="Ok_Button_Click"
-                Height="30" Width="88" HorizontalAlignment="Right" VerticalAlignment="Bottom"
-                Style="{StaticResource AccentedSquareButtonStyle}"/>
+                Height="25" Width="88" HorizontalAlignment="Right" VerticalAlignment="Bottom"
+                Background="LightBlue" BorderBrush="DarkBlue" Foreground="Black" />
 
         <Button x:Name="cancel_Button" Content="cancel" Margin="0,0,10,10"
                 HorizontalAlignment="Right" VerticalAlignment="Bottom"
-                Height="30" Width="88"  
-                Style="{StaticResource AccentedSquareButtonStyle}" Click="cancel_Button_Click"/>
+                Height="25" Width="88"  
+                Background="LightBlue" BorderBrush="DarkBlue" Foreground="Black" 
+                Click="cancel_Button_Click"/>
 
         <Button x:Name="LoadFile_Button" Content="Load File" 
                 Margin="10,37,0,0" Click="LoadFile_Button_Click"
-                Height="30" Width="88" VerticalAlignment="Top" HorizontalAlignment="Left" 
-                Style="{StaticResource AccentedSquareButtonStyle}"/>
+                Height="20" Width="88" VerticalAlignment="Top" HorizontalAlignment="Left" 
+                Background="LightBlue" BorderBrush="DarkBlue" Foreground="Black" />
 
-        <Label Content="Load File to Dynamo" HorizontalAlignment="Left"  Foreground="WhiteSmoke" 
+        <Label Content="FILE TO DYNAMO" HorizontalAlignment="Left"  Foreground="Black"
                Margin="10,10,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
     </Grid>
 

@@ -11,28 +11,19 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using MahApps.Metro.Controls;
 
 namespace SlapsUI
 {
     /// <summary>
     /// Interaction logic for UI_ComboBox.xaml
     /// </summary>
-    public partial class UI_ComboBox2 : MetroWindow
+    public partial class UI_ComboBox2 : Window
     {
         public UI_ComboBox2()
         {
-            EnsureApplicationResources();
             InitializeComponent();
         }
 
-        public static void EnsureApplicationResources()
-        {
-            if (Application.Current == null)
-            {
-                new MyApp() { ShutdownMode = ShutdownMode.OnExplicitShutdown };
-            }
-        }
         private void Ok_Button_Click(object sender, RoutedEventArgs e)
         {
             DialogResult = true;
