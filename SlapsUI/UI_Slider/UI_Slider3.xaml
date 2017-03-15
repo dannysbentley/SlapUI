@@ -5,54 +5,86 @@
                       ResizeMode="CanResizeWithGrip"
                       WindowStartupLocation="CenterScreen">
   <Grid>
-    <Button x:Name="Ok_Button" Content="ok" 
-                Margin="0,0,106,10" Click="Ok_Button_Click"
-                Height="25" Width="88" HorizontalAlignment="Right" VerticalAlignment="Bottom"
-                Background="LightBlue" BorderBrush="DarkBlue" Foreground="Black"/>
+    <Button x:Name="Ok_Button" 
+                Content="ok" 
+                Margin="0,0,106,10" 
+                Click="Ok_Button_Click"
+                Height="25" Width="88" 
+                HorizontalAlignment="Right" VerticalAlignment="Bottom"
+                Background="LightBlue" 
+                BorderBrush="DarkBlue" 
+                Foreground="Black"/>
 
-    <Button x:Name="cancel_Button" Content="cancel" Margin="0,0,10,10"
+    <Button x:Name="cancel_Button" 
+                Content="cancel" 
+                Margin="0,0,10,10"
+                Click="cancel_Button_Click"
                 HorizontalAlignment="Right" VerticalAlignment="Bottom"
                 Height="25" Width="88"  
-                Background="LightBlue" BorderBrush="DarkBlue" Foreground="Black" 
-            Click="cancel_Button_Click"/>
+                Background="LightBlue" 
+                BorderBrush="DarkBlue" 
+                Foreground="Black"/>
 
-    <Label x:Name="Input" HorizontalAlignment="Left"  Foreground="Black" 
-               Margin="10,10,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
-    <Label x:Name="Input_2" HorizontalAlignment="Left"  Foreground="Black" 
-        	Margin="10,79,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
-    <Label x:Name="Input_3" HorizontalAlignment="Left"  Foreground="Black" 
-    	Margin="10,144,0,0" VerticalAlignment="Top" FontFamily="Arial"/>
+    <Label x:Name="Input" 
+                HorizontalAlignment="Left" VerticalAlignment="Top"
+                Foreground="Black" 
+                Margin="10,10,0,0" 
+                FontFamily="Arial"/>
 
-    <Slider x:Name="Slider" Margin="10,39,106,0" 
-                VerticalAlignment="Top" ValueChanged="Slider_ValueChanged"/>
+    <Label x:Name="Input_2" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" 
+                Foreground="Black" 
+        	      Margin="10,79,0,0" 
+                FontFamily="Arial"/>
+
+    <Label x:Name="Input_3" 
+                HorizontalAlignment="Left" VerticalAlignment="Top"   
+                Foreground="Black" 
+    	          Margin="10,144,0,0" 
+                FontFamily="Arial"/>
+
+    <Slider x:Name="Slider" 
+                Margin="10,39,106,0" 
+                VerticalAlignment="Top" 
+                ValueChanged="Slider_ValueChanged"/>
 
     <TextBox Text="{Binding ElementName=Slider, Path=Value, UpdateSourceTrigger=PropertyChanged}" 
-                 DockPanel.Dock="Right" TextAlignment="Right" 
+                 DockPanel.Dock="Right" 
+                 TextAlignment="Right" 
                  Background="White"
                  BorderBrush="DarkBlue"
                  Foreground="Black"
-                 Margin="0,22,10,0" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Width="78"/>
+                 Margin="0,22,10,0" Height="30" 
+                 HorizontalAlignment="Right" VerticalAlignment="Top" 
+                 Width="78"/>
 
-    <Slider x:Name="Slider_2" Margin="10,108,106,0" 
-        	VerticalAlignment="Top" ValueChanged="Slider_ValueChanged"/>
+    <Slider x:Name="Slider_2" 
+                 Margin="10,108,106,0" 
+        	       VerticalAlignment="Top" 
+                 ValueChanged="Slider_ValueChanged"/>
 
     <TextBox Text="{Binding Value, ElementName=Slider_2, UpdateSourceTrigger=PropertyChanged}" 
-        	TextAlignment="Right" 
-        	Background="White"
+        	       TextAlignment="Right" 
+        	       Background="White"
                  BorderBrush="DarkBlue"
                  Foreground="Black"
-        	Margin="0,94,10,0" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Width="78"/>
+        	       Margin="0,94,10,0" 
+                 Height="30" Width="78"
+                 VerticalAlignment="Top" HorizontalAlignment="Right"/>
 
-    <Slider x:Name="Slider_3" Margin="10,173,106,0" 
-    	VerticalAlignment="Top" ValueChanged="Slider_ValueChanged"/>
+    <Slider x:Name="Slider_3" 
+                 Margin="10,173,106,0" 
+    	           VerticalAlignment="Top" 
+                 ValueChanged="Slider_ValueChanged"/>
 
     <TextBox Text="{Binding Value, ElementName=Slider_3, UpdateSourceTrigger=PropertyChanged}" 
-    	TextAlignment="Right" 
-    	Background="White"
-                 BorderBrush="DarkBlue"
-                 Foreground="Black"
-    	Margin="0,159,10,0" Height="30" VerticalAlignment="Top" HorizontalAlignment="Right" Width="78"/>
-
+    	          TextAlignment="Right" 
+    	          Background="White"
+                BorderBrush="DarkBlue"
+                Foreground="Black"
+    	          Margin="0,159,10,0" 
+                Height="30" Width="78"
+                VerticalAlignment="Top" HorizontalAlignment="Right"/>
   </Grid>
 </Window>
  
